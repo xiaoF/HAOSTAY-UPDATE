@@ -10,14 +10,14 @@
   <platform name="android">
       <config-file target="res/xml/config.xml" parent="/*">
           <feature name="HAOSTAY-UPDATE">
-              <param name="android-package" value="com.haostay.mobile.book.CheckUpdatePlugin"/>
+              <param name="android-package" value="com.haostay.mobile.book.update.CheckUpdatePlugin"/>
           </feature>
       </config-file>
       <config-file target="AndroidManifest.xml" parent="/manifest">
           <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
       </config-file>
-      <source-file src="src/android/CheckUpdatePlugin.java" target-dir="src/com/haostay/mobile/book/CheckUpdatePlugin"/>
-      <source-file src="src/android/SureButtonListener.java" target-dir="src/com/haostay/mobile/book/SureButtonListener"/>
-      <source-file src="src/android/Update.java" target-dir="src/com/haostay/mobile/book/Update"/>
+      <source-file src="src/android/CheckUpdatePlugin.java" target-dir="src/com/haostay/mobile/book/update"/>
+      <source-file src="src/android/SureButtonListener.java" target-dir="src/com/haostay/mobile/book/update"/>
+      <source-file src="src/android/Update.java" target-dir="src/com/haostay/mobile/book/update"/>
   </platform>
 </plugin>
