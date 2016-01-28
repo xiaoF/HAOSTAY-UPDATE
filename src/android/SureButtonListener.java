@@ -1,4 +1,4 @@
-package com.haostay.mobile.book;
+package com.haostay.mobile.book.update;
 
 import android.content.DialogInterface;
 

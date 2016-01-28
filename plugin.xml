@@ -4,12 +4,12 @@
   <description>Native Update for Cordova</description>
   <license>Apache 2.0</license>
   <keywords>cordova,NSUserDefaults,SharedPreference,phonegap</keywords>
-  <js-module src="www/HAOSTAY-UPDATE.js" name="HAOSTAY-UPDATE">
-    <clobbers target="HAOSTAY-UPDATE"/>
+  <js-module src="www/HAOSTAYUPDATE.js" name="HAOSTAYUPDATE">
+    <clobbers target="HAOSTAYUPDATE"/>
   </js-module>
   <platform name="android">
       <config-file target="res/xml/config.xml" parent="/*">
-          <feature name="HAOSTAY-UPDATE">
+          <feature name="HAOSTAYUPDATE">
               <param name="android-package" value="com.haostay.mobile.book.update.CheckUpdatePlugin"/>
           </feature>
       </config-file>

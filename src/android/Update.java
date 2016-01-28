@@ -1,4 +1,4 @@
-package com.haostay.mobile.book;
+package com.haostay.mobile.book.update;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -11,6 +11,8 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
+
+import com.haostay.mobile.book.R;
 
 import org.json.JSONObject;
 
@@ -25,8 +27,6 @@ import java.net.URL;
 import java.security.Principal;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.HttpsURLConnection;

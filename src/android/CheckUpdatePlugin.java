@@ -1,8 +1,6 @@
-package com.haostay.mobile.book;
+package com.haostay.mobile.book.update;
 
 
-import android.content.SharedPreferences;
-import android.content.pm.PackageInfo;
 import android.util.Log;
 
 import org.apache.cordova.CallbackContext;
