@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.haostay.mobile.book.update" version="0.0.1">
+  <name>HAOSTAY-UPDATE</name>
+  <description>Native Update for Cordova</description>
+  <license>Apache 2.0</license>
+  <keywords>cordova,NSUserDefaults,SharedPreference,phonegap</keywords>
+  <js-module src="www/HAOSTAY-UPDATE.js" name="HAOSTAY-UPDATE">
+    <clobbers target="HAOSTAY-UPDATE"/>
+  </js-module>
+  <platform name="android">
+      <config-file target="res/xml/config.xml" parent="/*">
+          <feature name="HAOSTAY-UPDATE">
+              <param name="android-package" value="com.haostay.mobile.book.CheckUpdatePlugin"/>
+          </feature>
+      </config-file>
+      <config-file target="AndroidManifest.xml" parent="/manifest">
+          <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      </config-file>
+      <source-file src="src/android/CheckUpdatePlugin.java" target-dir="src/com/haostay/mobile/book/CheckUpdatePlugin"/>
+      <source-file src="src/android/SureButtonListener.java" target-dir="src/com/haostay/mobile/book/SureButtonListener"/>
+      <source-file src="src/android/Update.java" target-dir="src/com/haostay/mobile/book/Update"/>
+  </platform>
+</plugin>
