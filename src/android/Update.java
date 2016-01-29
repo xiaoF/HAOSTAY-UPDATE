@@ -112,7 +112,7 @@ public class Update {
 
 			JSONObject resultJson = new JSONObject(result);
 
-			if(checkVersionNo(versionName,"1.0.0")){
+		if(checkVersionNo(versionName,resultJson.getString("versionNo"))){
 				//需要更新
 				versionNo = resultJson.getString("versionNo");
 	 			updateUrl = resultJson.getString("versionUrl");
